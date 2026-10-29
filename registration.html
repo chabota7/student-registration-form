@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chabota</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1></h1>
+    <div class="container">
+
+        <aside class="left-panel">
+            <div class="logo"><img src="logo.png" alt="University logo"></img></div>
+            <h2>Welcome to the Student Portal</h2>
+            <ul>
+                <h1><u>GROUP 10</u></h1>
+                <li>Access Online materials</li>
+                <li>Manage your registration</li>
+                <li>contact staff</li>
+                <div class="group-members">
+                    <h3>Group Members</h3>
+                    <p>Chabota Mweetwa - 202500172</p>
+                    <p>Michael Judge   - 202500911</p>
+                    <p>Buya Mukolo     - 202500723</p>
+                    <p>Panuel Sibanda  - 20202582</p>
+                    <p>Thokozile Banda - 202505196</p>
+                    <p>Soonfa Wakasaka - 202503846</p>
+                    <p>Steve Petulu    - 202402856</p>
+                </div>
+            </ul>
+        </aside>
+
+        <main class="right-panel">
+            <h1>Create Student Account</h1>
+            <p>Already Enrolled? <a href="htps://www.google.com">Log In</a></p>
+                <button class="sso-btn" type="button">Continue with Google/SSO</button>
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+
+            <form id="registrationForm" novalidate>
+
+                <div class="row">
+
+                    <div class="field">
+                        <label for="studentId">Student ID</label>
+                        <input type="text" id="studentId">
+                        <span class="error" id="studentIdError"></span>
+                    </div>
+                    <!--Enter your full name-->
+                    <div class="field">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName">
+                        <span class="error" id="fullNameError"></span>
+                    </div>
+                </div> 
+
+                <div class="row">   
+                    <!--email-->
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+                        <span class="error" id="emailError"></span>
+                    </div>
+                    <!--phone number area-->
+                    <div class="field">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone">
+                        <span class="error" id="phoneError"></span>
+                    </div>
+                </div> 
+                
+                <div class="row">
+                    <!-- programme filed-->
+                    <div class="field">
+                        <label for="programme">Degree Programme</label>
+                        <select id="programme">
+                            <option value="">Programme</option>
+                            <option value="SE">Software Engineering</option>
+                            <option value="CS">Data Science</option>
+                            <option value="IT">Information Technology</option>
+                             <option value="CS">Computer Science</option>
+                        </select>
+                     <span class="error" id="programmeError"></span>
+                    </div>
+                    <!--select your year my nigga-->
+                    <div class="field">
+                        <label for="year">Year of Study</label>
+                        <select id="year">
+                            <option value="">Select Year</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <span class="error" id="yearError"></span>
+                    </div>
+                </div> 
+                    <!--password input and confirmation-->
+                <div class="row">
+
+
+                    <div class="field">
+                            <label for="password">Password</label>
+                            <input type="password" id="password">
+                            <span class="error" id="passwordError"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword">
+                            <span class="error" id="confirmPasswordError"></span>
+                        </div>
+
+                    </div>
+                <button type="submit">Complete Registration</button>
+            </form>
+
+            <div id="message"></div>
+        </main>
+       
+    </div>
+<script src=validation.js></script>
+</body>
+</html>
